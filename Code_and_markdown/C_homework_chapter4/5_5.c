@@ -15,7 +15,6 @@ int Digitsprint(int n)
 {
 	int x=Digitscount(n),sum=0;
     char b[5];//这里其实是编译器问题，选择DEV-C++编译器就是char b[x+1]就好,C/C++那个版本太老了，只能b[5]
-    b[x]='\0';
     for (int i = x-1;i >=0 ;i--){
         b[i]=n%10+'0';
         n /= 10;
