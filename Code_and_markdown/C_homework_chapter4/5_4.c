@@ -9,7 +9,7 @@ int main()
     double bmi=w/(h*h);
     //输出BMI，“your BMI is:”，两位小数
     printf("your BMI is:%.2f",bmi);
-    //判断四级体质，四级体重等级为light，normal，a little fat，fat，判断精度为整数，并且输出“,”+等级+“！”
+    //判断四级体质，四级体重等级为light，normal，a little fat，fat，判断精度为整数
     if(bmi<18)
         printf(",light!");
     if(bmi>=18.5&&bmi<25)
