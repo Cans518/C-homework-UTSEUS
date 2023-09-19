@@ -10,7 +10,6 @@ long long factorial(int n)
     return res;
 }
 
-
 int main()
 {
     int n;
