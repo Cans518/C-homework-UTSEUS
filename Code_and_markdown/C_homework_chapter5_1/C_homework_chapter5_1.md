@@ -59,11 +59,11 @@ int main()
     char a,b[100];
     scanf("c",&a);
     while(a!='\n'){
-        scanf("%c",&a)
         if(a>='0'&&a<='9'){
             b[d_i]=a;
             d_i++;
         }
+        scanf("%c",&a)
     }
     for (int i = 0; i < d_i; i++)
             printf("%c ",b[i]);
@@ -73,6 +73,29 @@ int main()
 ```
 
 - 这里在`while`循环前输入的原因是，让最开始的变量`a`有一个可供判断且能进入`while`循环的值，当然在定义的时候可以把比变量`a`给定一个不为`\0`的值。
+
+- 或者我们可以使用`do-while`循环
+
+```c
+#include <stdio.h>
+int main()
+{
+    int d_i=0;
+    char a,b[100];
+    scanf("c",&a);
+    do{
+        scanf("%c",&a)
+        if(a>='0'&&a<='9'){
+            b[d_i]=a;
+            d_i++;
+        }
+    }while(a!='\n')
+    for (int i = 0; i < d_i; i++)
+            printf("%c ",b[i]);
+    printf("\nThere are %d digits!\n",d_i);\\这里是开始就换行，把光标移到下一行再开始新的输入
+    return 0;
+}
+```
 
 
 
