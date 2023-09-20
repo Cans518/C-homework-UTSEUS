@@ -118,8 +118,6 @@ int main()
 - 这是一个很明显进行字符操作的题目
 - 如果不是题目要求一定要使用`do-while`循环，我们可以直接字符串读入。
 
-<div STYLE="page-break-after: always;"></div>
-
 #### 示例代码
 
 ```c
@@ -144,7 +142,7 @@ int main()
 }
 ```
 
-
+<div STYLE="page-break-after: always;"></div>
 
 ### 计算100以内奇数和
 
@@ -201,7 +199,6 @@ int main()
 
   - 第一行 `1*1` `1*2` `1*3` `1*4`
   - 第二行 `2*1` `2*2` `2*3` `2*4`
-  - 略
 
 #### 示例代码
 
@@ -221,7 +218,7 @@ int main()
 }
 ```
 
-<div STYLE="page-break-after: always;"></div>
+
 
 ### 函数值计算1
 
@@ -314,8 +311,6 @@ int main()
 - 用`f(left)`和`f(right)`和`0`比大小行了，保证`0`在两者之间
 - 再用`(left+right)/2`代替`left`或者`right`中的一个就行
 - 一个无限循环，退出条件为：$|f(x)-0|\leq 0.000001$
-
-<div STYLE="page-break-after: always;"></div>
 
 #### 示例代码1(带函数版)
 
