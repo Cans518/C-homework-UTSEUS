@@ -14,6 +14,6 @@ int main() {
         b = temp;//将n+2项赋值给n+1项
     }
     if (count % 5 != 0)
-        printf("\n");
+        printf("\n");//在完成最后输出后如果不满5个则补上一个换行
     return 0;
 }
