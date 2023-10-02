@@ -10,23 +10,21 @@ int main() {
         for (j = 0; j < n; j++)
             scanf("%d", &matrix[i][j]);
 
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {//输出矩阵
         for (j = 0; j < n; j++)
             printf("%4d", matrix[i][j]);
         printf("\n");
     }
 
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {//输出上三角
         for (j = 0; j < n; j++) {
             if (j <= i) 
                 printf("%4d", matrix[i][j]);
-            //else 
-                //printf("%4c",' ');
         }
         printf("\n");
     }
 
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {//输出下三角
         for (j = 0; j < n; j++) {
             if (j >= i)
                 printf("%4d", matrix[i][j]);

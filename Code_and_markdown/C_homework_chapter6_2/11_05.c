@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-void selectionSort(int arr[], int n) {
+void selectionSort(int arr[], int n) {//冒泡排序
     int i, j, max_index, temp;
 
     for (i = 0; i < n - 1; i++) {
         max_index = i;
 
         for (j = i + 1; j < n; j++) {
-            if (arr[j] > arr[max_index]) {
+            if (arr[j] > arr[max_index])
                 max_index = j;
-            }
         }
 
         if (max_index != i) {

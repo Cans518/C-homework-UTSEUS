@@ -20,7 +20,7 @@ int main() {
     char str[100];
 
     printf("Enter a string:");
-    gets(str);
+    gets(str);//读入整行数据，不使用printf("%s",str)的原因是会把回车也读入，遇到空格就停止
 
     if (isPalindrome(str))
         printf("It is a palindrome");
