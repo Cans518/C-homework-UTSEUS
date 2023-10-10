@@ -4,7 +4,7 @@ void mix(int a[], int b[]) {
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
             if (a[i] == b[j]) {
-                printf("%4d", a[i]);
+                printf("%4d", a[i]);//找到交叉项后直接输出
                 break;
             }
         }

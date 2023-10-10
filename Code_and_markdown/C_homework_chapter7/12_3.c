@@ -5,6 +5,7 @@ int fib(int n){
     if (n == 1 || n == 2)
         return 1;
     return fib(n-1) + fib(n-2);
+    //利用递归完成求Fibonacci数
 }
 
 int main()
@@ -17,9 +18,9 @@ int main()
 
     int i = 1;
     while (1){
-        if (fib(i) >= m && fib(i) <= n)
+        if (fib(i) >= m && fib(i) <= n)//如果第i项Fibonacci数大于等于m且小于等于n
             printf("%d\n",fib(i));
-        if (fib(i) > n)
+        if (fib(i) > n)//如果第i项Fibonacci数大于n
             return 0;
         i++;
     }
