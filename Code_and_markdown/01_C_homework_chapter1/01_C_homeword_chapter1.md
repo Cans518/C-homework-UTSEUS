@@ -226,7 +226,7 @@ int main()
 int mian()
 {
 	printf("*************\n");
-	printf("Welcome\n")
+	printf("Welcome\n");
 	printf("*************\n);
 	return 0;
 }
