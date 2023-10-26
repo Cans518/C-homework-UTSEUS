@@ -1,13 +1,10 @@
 #include <stdio.h>
+#include <string.h>
 
-void copySubstring(char* str, int m, char* newStr) {
-    int i, j;
-
-    // 复制从第m个字符开始的字符串
-    for (i = m - 1, j = 0; str[i] != '\0'; i++, j++)
-        newStr[j] = str[i];
-
-    newStr[j] = '\0';//手动添加字符串结束符
+void copystr(char *s1, char *s2, int n) {
+    char *p;
+    p = s1 + n -1;
+    strcpy(s2, p);
 }
 
 int main() {
@@ -20,8 +17,7 @@ int main() {
     printf("Enter m: ");
     scanf("%d", &m);
 
-
-    copySubstring(str, m, cstr);
+    copystr(str, cstr, m);
 
     printf("%s\n", cstr);
 
